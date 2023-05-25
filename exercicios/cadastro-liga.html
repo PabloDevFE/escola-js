@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da liga dos astronautas</title>
+</head>
+<body>
+    
+    <h3>Cadastro da liga dos astronautas</h3>
+
+    <form action="">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+            <br>
+        <div>
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail">
+            - 
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha">
+        </div> 
+            <br>
+        <div>
+            <label for="nasc">Data de nascimento:</label>
+            <input type="date" name="nasc" id="nasc">
+            - 
+            <label for="foto">Foto:</label>
+            <input type="file" name="foto" id="foto">
+        </div>
+            <br>
+        <div>
+            <label for="nac">Nacionalidade</label>
+            <select name="select" id="nac">
+                <option value="valor1">Brasileiro</option>
+                <option value="valor2">Cubano</option>
+                <option value="valor3">Russo</option>
+            </select>
+            - 
+            <label for="gen">Genêro</label>
+            <input type="radio" name="gen" id="masc">M
+            <input type="radio" name="gen" id="fem">F
+        </div>
+            <br>
+        <label for="qua">Suas principais qualidades:</label> <br>
+        <input type="checkbox" name="qua" id="qua"> Inteligência |
+        <input type="checkbox" name="qua" id="qua"> Resiliência |
+        <input type="checkbox" name="qua" id="qua"> Preparo físico |
+        <input type="checkbox" name="qua" id="qua"> Educação <br>
+            <br>
+        <div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Porque você gostaria de ser um astronauta?"></textarea>
+        </div>
+            <br>
+        <input type="submit" value="Criar">
+    </form>
+
+</body>
+</html> 
