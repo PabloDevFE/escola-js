@@ -1,0 +1,33 @@
+li {
+    color: rgb(255, 0, 0);
+}
+
+ul {
+    border: 2px solid rgb(8, 0, 255);
+}
+
+h1 {
+    font-size: 3rem;
+    background-color: rgb(9, 8, 94);
+}
+
+body {
+    height: 95.76vh;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eca578aa-dd1c-45d0-a60a-154b9fdcc9b6/dd7pvbh-937db304-8a03-4278-8acf-050500ba6286.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VjYTU3OGFhLWRkMWMtNDVkMC1hNjBhLTE1NGI5ZmRjYzliNlwvZGQ3cHZiaC05MzdkYjMwNC04YTAzLTQyNzgtOGFjZi0wNTA1MDBiYTYyODYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._wNf7dEIkAOfjINhcT-3iLVHM6E9gOOSfuD5XLwn5Eo);
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.moon {
+    color: black;
+}
+
+.big-text {
+    font-size: 40px;
+}
+
+#europa-text {
+    font-size: 10px;
+    color: purple;
+}
