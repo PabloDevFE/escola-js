@@ -1,0 +1,23 @@
+* {
+
+} /*adiciona configurações em TODOS os elementos*/
+
+li a {
+
+} /*adiciona configurações em todos os A dentro de LI*/
+
+li > a {
+
+} /*TODO A for filho de LI recebe configurações */
+
+h1 + h4 {
+
+} /*adiciona configurações a TODO H4 que vem depois de um H1*/
+
+a[href='/youtube.com'] {
+
+} /*adiciona configurações em todos os A que tiverem HREF youtube.com*/
+
+li:nth-of-type(2) {
+
+} /*adiciona configurações sempre no segundo LI*/
