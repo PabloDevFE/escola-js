@@ -1,0 +1,31 @@
+//operações numéricas
+SOMA:
+    1 + 4 = 5
+    2 + (-5) = -3
+
+SUBTRAÇÃO:
+    2 - 2 = 0
+    10 - 5 = 5
+
+MULTIPLICAÇÃO: 
+    3 * 3 = 9
+
+DIVISÃO:
+    3 / 3 = 1
+
+RESTO DA DIVISÃO:
+    10 % 3 = 1
+
+//string
+CONCATENAÇÃO
+    "planeta" + "terra" = "planetaterra"
+
+EXTRAIR UM CARACTERE
+    "Planeta Terra"[2] = "a" (a posição dos elementos começaa partir de 0)
+
+SABER O TAMANHO DA string
+    "Planeta Terra".length = 13
+
+CONCATENAÇÃO + EXTRAÇÃO 
+    "Planeta " + "Terra"[3] = "Planeta r"
+    //("Planeta " + "Terra")[3] = "n" (primeiro faz a concatenação e depois a extração)
