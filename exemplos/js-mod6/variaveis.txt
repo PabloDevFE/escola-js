@@ -1,0 +1,36 @@
+let space = "FE supernova"
+//console.log(space) = FE supornova
+space = "FE Helmet"
+//console.log(space) = FE Helmet
+SUBSTITUI O VALOR ANTIGO DA VARIAVEL (VAR E LET tem a mesma funcionalidade...)
+
+
+const saquad = "Estelar"
+//console.log(squad) = Estelar
+saquad = "Espacial"
+//console.log(squad) = Estelar
+CONST É UMA VARIÁVEL CONSTANTE, SÓ RECEBE VALOR 1 VEZ
+
+
+
+
+
+VARIAVEIS COM RECURSO NATIVOS
+
+let Confirmation = confirm(Aguardando confirmação para decolar!)
+console.log(Confirmation)
+ABRE O ALERT DE CONFIRMAÇÃO >
+SE CLICAR NO OK RETORNA "TRUE"
+SE CLICAR NO CANCELAR RETONA "FALSE"
+
+let pilot = prompt("Qual seu nome, piloto?")
+console.log(pilot)
+ABRE O ALERT DE PROMT 
+E RETORNA O QUE FOI ESCRITO 
+
+
+
+
+NÃO PODE HAVER ESPAÇO ENTRE O NOME DAS VARIAVEIS
+let my age (XXXX)
+let myAge
