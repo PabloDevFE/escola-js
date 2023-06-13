@@ -1,0 +1,10 @@
+alert(Seja muito bem vindo! Você pode informar alguns dados, por favor)
+let name = prompt(Qual é o seu nome)
+let age = prompt(Qual é sua idade)
+let confirmation = confirm(`Sua idade é realmente ${age}`)
+console.log(confirmation)
+if (confirmation == true){
+  alert(`O nome digitado foi ${name}, a idade digitada foi${age} (VERIFICADA)`)
+} else {
+  alert(`O nome digitado foi ${name}, a idade digitada foi ${age} (NÃO VERIFICADA)`)
+}
