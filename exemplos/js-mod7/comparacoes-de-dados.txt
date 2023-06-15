@@ -16,11 +16,11 @@ console.log(velocity != 80) >> FALSE
 console.log(velocity !== "80") >> TRUE
 
 
-MAIOR/menor
+MAIOR/MENOR
 console.log(velocity > 70) >> TRUE
 console.log(velocity < 90) >> TRUE
 console.log(velocity > 80) >> FALSE
 console.log(velocity >= 80) >> TRUE
 console.log(spaceship > "Helmet") >> FALSE 
 //verifica a ordem alfabética (G vem antes de H)
-console.log(spaceship > "Apolo") >> True
+console.log(spaceship > "Apolo") >> TRUE
