@@ -1,0 +1,26 @@
+let spaceship = "Golias"
+let velocity = 80
+
+
+IGUAL
+console.log(velocity == 90) >> FALSE
+console.log(spaceship == "Golias") >> TRUE
+console.log(velocity == "80") >> TRUE
+console.log(velocity === "80") >> TRUE
+//com tres sinais de iguais, até o tipo deve ser igual para ser true
+
+
+DIFERENTE
+console.log(velocity != 80) >> FALSE
+// != significa diferente
+console.log(velocity !== "80") >> TRUE
+
+
+MAIOR/menor
+console.log(velocity > 70) >> TRUE
+console.log(velocity < 90) >> TRUE
+console.log(velocity > 80) >> FALSE
+console.log(velocity >= 80) >> TRUE
+console.log(spaceship > "Helmet") >> FALSE 
+//verifica a ordem alfabética (G vem antes de H)
+console.log(spaceship > "Apolo") >> True

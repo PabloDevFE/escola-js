@@ -1,0 +1,69 @@
+ espressões contruidas a partir de valores booleanos e retorna outro valorbooleano
+ VALORES LOGICOS
+ E >> &&
+ OU
+ NÃO
+
+
+ex> 10 > 4 OU 5 <= 5 
+    true    true
+ex> 0 >= 0 OU 5 > 6 E 1 > 0
+    true      false    false
+
+
+
+
+
+
+let spaceship = "Elemental"
+let velocity = 20
+
+TABELA VERDADE DO (E - &&)
+console.log(spaceship.length == 9 && velocity > 15) >> TRUE
+        //true E true = true 
+        //v E v = V
+
+console.log(velocity > 10 && velocity < 19) >> FALSE
+        //true E false = false 
+        //v E f = F
+
+console.log(velocity < 17 && spaceship == "Elemental") >> FALSE
+        //false E true = false 
+        //f E v = F
+
+console.log(spaceship == "Golias" && velocity > 21) >> FALSE
+        //false E false = false 
+        //f E f = F
+        
+
+
+TABELA VERDADE DO (OU - ||)
+console.log(spaceship.length == 9 || velocity > 15) >> TRUE
+        //true OU true = true
+        //v OU v = V
+
+console.log(velocity > 10 || velocity < 19) >> TRUE
+        //true OU false = true
+        //v OU f = V
+
+console.log(velocity < 17 || spaceship ="Elemental") >> TRUE
+        //false OU true = true
+        //f OU v = V
+
+console.log(spaceship == "Golias" || velocity > 21) >> FALSE
+        //false OU false = false 
+        //f OU f = F
+
+
+
+TABELA VERDADE DO (NÃO - !)
+console.log(!(velocity > 19)) >> FALSE
+        //NÃO V = F
+
+console.log(!(spaceship == "Golias")) >> TRUE
+        //NÃO F = V
+
+
+
+EXEMPLO
+console.log(!(velocity > 25 && spaceship == "Elemental") || (velocity - 3 == 17 && spaceship.length + 1 > 15)) >> TRUE
