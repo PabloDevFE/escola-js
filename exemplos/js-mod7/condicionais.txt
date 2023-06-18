@@ -1,0 +1,32 @@
+let velocity = 901
+
+if(velocity < 100){
+  console.log("estamos numa velocidade aceitavel")
+} else {
+  console.log("entrando em velocidade de risco")
+}
+
+se o resquisito do if não for atendido o bloco do else será executado
+
+
+
+
+é possivel adicionar ifs dentro do else (else if), ex:
+let velocity = 20
+
+if(velocity < 40){
+  console.log("Velocidade baixa")
+} else if(velocity <= 100){
+   console.log("cuidado, proximo a velocidade de risco")
+ } else {
+   console.log("velocidade de Risco")
+ }
+
+
+
+
+OPERADOR TERNARIO (if de uma linha)
+(velocity > 100) ? console.log("Velocidade maior que 100") : console.log("Velocidade menor que 100") >> Velocidade maior que 100
+
+se a condicional entre parenteses for verdadeira executa o primeiro bloco
+se a condicional entre parenteses for falsa executa o secuda bloco
