@@ -1,0 +1,35 @@
+let velocity = 80
+
+switch(velocity * 2) {
+    case 100:
+        console.log("Sua velocidade é 100km/s)
+        break
+    case 160:
+        console.log("Sua velocidade é 160km/s")
+        break
+    default:
+    console.log("Velocidade não identificada")
+} >>> Sua velocidade é 160km/s
+
+O SWITCH AVALIA TODOS OS CASES, ATÉ ACHAR ALGUM QUE ATENDA. POR ISSO É NECESSÁRIO O BREAK
+O DEFAULT É ACIONADO QUANDO NADA ATENDE AO REQUISITO
+
+
+let velocity = 90
+
+switch (velocity) {
+    case 80:
+    case 90:
+    case 100:
+        console.log("velocidade aceitável")
+        break
+    case 110:
+        console.log("velocidade alta, mas aceitável")
+        break
+    default: 
+        console.log("velocidade não identificada")
+} >>> Velocidade aceitável
+
+O SWITCH SEMPRE PROCURA PELO CASE QUE PRIMEIRO ATENDE AO REQUISITO
+EXECUTA TODOS OS CASE EMBAIXO, ATÉ ENCONTRAR O BREAK
+SE O CASE PROCURADO FOR ENCONTRADO E NÃO TIVER BREAK, O SWHITCH EXECUTA O CÓDIGO ATÉ ACHAR O PROXIMO CASE COM BREAK
