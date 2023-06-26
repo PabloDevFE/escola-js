@@ -1,0 +1,11 @@
+É POSSIVEL ENCERRAR UMA ESTRUTURA DE REPETIÇÃO A QUALQUER MOMENTO COM O BREAK
+ 
+ let spaceshipName = "Supernova"
+
+ for (let i = 0; i < spaceshipName.length; i++) {
+    if (spaceshipName[i] == o) {
+    break 
+    } else {
+        spaceshipName[i]
+    }
+ }
