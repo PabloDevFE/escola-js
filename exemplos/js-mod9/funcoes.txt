@@ -1,0 +1,39 @@
+FUNÇÃO É UM BLOCO DE CÓDIGO PARA EXECUTAR UMA DETERMINADA AÇÃO 
+ESSE BLOCO É NOMEADO
+PODEMOS CHAMAR QUANDO PRECISARMOS
+
+function algumaTarefa() {
+    <bloco de código>
+}
+algumaTarefa()
+
+ex:
+function greetPilot() {
+    alert("bom dia piloto")
+}
+
+greetPilot()
+
+
+
+PRAMETROS DA FUNÇÃO
+OS PRAMETROS FUNCIONAM COMO UMA VARIAVEL
+function speedUp(velocity, acceleration) {
+    let newVelocity = velocity + acceleration
+    console.log("Nova velocidade" + newVelocity)
+}
+
+speedUp(60,10)
+
+
+PRAMETROS COM VALOR PADRÃO
+SÃO VALORES QUE O PRAMETRO VAI RECEBER CASO A GENTE NÃO QUEIRA PASSAR ESSE PARAMETRO NA CHAMADA DA FUNÇÃO
+A CHAMADA DOS VALORES DEVEM SEGUIR A ORDEM DE POSICIONAMENTO
+ex:
+function greetPilot(name,  message = "Olá") {
+  alert(name + ", " + message)
+}
+
+greetPilot("Pablo")
+COMO NÃO FOI ENVIADO UM PRAMETRO PARA MENSAGE, O PARAMETRO PADRÃO SERÁ OLA
+

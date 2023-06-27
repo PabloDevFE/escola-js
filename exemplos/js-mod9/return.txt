@@ -1,0 +1,7 @@
+RETURN
+newVelocity IRA PRESERVAR SEU VALOR MESMO FORA DA FUNCTION
+function speedUp(velocity, acceleration) {
+    let newVelocity = velocity + accelerationconsole.log("Nova velocidade: " + newVelocity)
+    return newVelocity 
+}
+speedUp(20, 10)
