@@ -1,4 +1,4 @@
-let spaceshipName = prompt("Qual vai ser onome da nave?");
+let spaceshipName = prompt("Qual vai ser o nome da nave?");
 let velocity = 0;
 let choose = 0;
 
@@ -25,10 +25,12 @@ function acceleration() {
         `Nome da nave: ${spaceshipName} \nVelocidade atual: ${velocity}km/s`
       );
     } else if (choose == "4") {
-        //sair do programa
+        alert("Encerrando programa de bordo")
+    } else {
+        alert("Por favor, digite uma opção válida!")
     }
   }
-  return;
+  return choose;
 }
 
 acceleration();
