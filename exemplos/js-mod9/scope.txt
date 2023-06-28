@@ -1,0 +1,40 @@
+QUANDO UMA VARIAVEL É CRIADA FORA DA ESTRUTURA COM LET, ELA PODE SSER ACESSADA DE QUALQUER LUGAR DA APLICAÇÃO (ESCOPO GLOBAL)
+
+let spaceship = "Helmet"
+function newSpaceship() {
+  spaceship = "Elemental"
+}
+
+console.log(spaceship) >> Helmet
+newSpaceship()
+console.log(spaceship) >> Elemental
+
+
+
+
+QUANDO UMA VARIAVEL É CRIADA DENTRO DE UMA ESTRUTURA COM LET, ELA SÓ PODE SER ACESSADA DENTRO DESSA ESTRUTURA (ESCOPO LOCAL)
+
+function startSpaceshipVelocity() {
+    let spaceshipVelocity = 0
+}
+startSpaceshipVelocity()
+console.log(spaceshipVelocity) >> Undefined
+
+
+
+
+O VAR DECLARA A FUNÇÃO 1 ESCOPO A CIMA (NO TOPO DA FUNCTION)
+function setSpaceshipDetails() {
+    let velocity = 50
+    if (velocity == 50) {
+        velocity = 60
+        var spaceshipName = "Elemental"
+        let spaceshipTYpe = "Discovery"
+    }
+
+    console.log(velocity) >> 60
+    console.log(spaceshipName) >> Elemental
+    console.log(spaceshipTYpe) >> Undefined
+}
+
+setSpaceshipDetails()

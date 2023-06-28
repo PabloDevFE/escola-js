@@ -1,0 +1,19 @@
+FUNÇÕES ANONIMAS NÃO POSSUEM NOMEADO
+o nome é omitido na criação
+é possivel armazenar funções anonimas em variaveis
+
+console.log(speedUp(60,10)) >> 80
+console.log(doubleSpeed(50)) >> Undefined
+
+let doubleSpeed = function(velocity) {
+  return velocity * 2
+}
+
+
+function speedUp(velocity, acceleration) {
+  return velocity + acceleration
+}
+
+
+A FUNÇÃO CONVECIONAL É EXECUTADA NO INICIO DO CODIGO
+A FUNÇÃO ANONIMA SEGUE A ORDEM DE CHAMADA
