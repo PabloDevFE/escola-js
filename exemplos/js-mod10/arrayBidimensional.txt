@@ -1,0 +1,22 @@
+let hitchedSpaceships = [["Elemental", 7], ["Helmet", 13], ["Golias", 5], ["Supernova", 10]]
+//UM ARRAY QUE TEM 4 ARRAYS
+
+hitchedSpaceships.push(["Colossus", 8])
+//É POSSIVEL CRIAR OUTROS ARRAYS COM O PUSH OU UNSHIFT
+
+console.log(hitchedSpaceships[0]) >> ["Elemental", 7]
+
+console.log(hitchedSpaceships) >> [["Elemental", 7], ["Helmet", 13], ["Golias", 5], ["Supernova", 10], ["Colossus", 8]]
+
+
+
+==============================
+
+let hitchedSpaceships = [["Elemental", 7], ["Helmet", 13], ["Golias", 5], ["Supernova", 10]]
+console.log(hitchedSpaceships[3][0]) >> SUPERNOVA
+//É POSSIVEL SELECIONAR ELEMENTOS DENTRO DOS ARRAYS DENTRO DO ARRAY BIDIMENSIONAL
+
+ex:
+let hitchedSpaceships = [["Elemental", 7], ["Helmet", 13], ["Golias", 5], ["Supernova", [true, false]]]
+console.log(hitchedSpaceships[3][1][1]) >> False
+//ARRAYS PODEM TER INFINITAS DIMENSÕES
