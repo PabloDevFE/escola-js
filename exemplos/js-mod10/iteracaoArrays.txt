@@ -1,0 +1,64 @@
+As funções de iteração são HOF
+o callback é chamado pra cada elemento do array
+
+array.fancaoDeIterar(function(<elemento atual>, <indice>, <array>) {
+
+} )
+
+
+========== FOR EACH ===========
+PERCORRE TODOS OS ELEMENTOS DO ARRAY
+let hitchedSpaceships = ["Demeter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+hitchedSpaceships.forEach(function(currentSpaceship, index) {
+  console.log(`Nave: ${currentSpaceship} \nIndice: ${index}`)
+})
+>> "Nave: Demeter 
+Indice: 0"
+"Nave: Darwin 
+Indice: 1"
+"Nave: Supernova 
+Indice: 2"
+"Nave: Fenix 
+Indice: 3"
+"Nave: Puller 
+Indice: 4"
+
+
+
+
+
+============ MAP ============
+PERCORRE POR TODOS OS ELEMENTO MODIFICANDO 1 A 1
+E ALTERA-O PELO REOTRNO DO NOSSO CALLBACK E VAI REOTRNAR UM NOVO ARRAY
+
+let hitchedSpaceships = ["Demeter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+let upcasedSpaceships = hitchedSpaceships.map(function(currentSpaceship) {
+  let upcased = currentSpaceship.toUpperCase()
+  return upcased
+})
+
+console.log(upcasedSpaceships) >> ["DEMETER","DARWIN","SUPERNOVA","FENIX","PULLER"]
+
+
+
+
+=========== FILTER ============
+ESSA FUNÇÃO AGUARDA O RETORNO BOOLEANO DO CALLBACK PARA SABER SE ELEMENTO PASSOU NO FILTRO OU NÃO
+
+let hitchedSpaceships = ["Demeter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+let with7Chars = hitchedSpaceships.filter(element => {return element.length >= 7})
+
+console.log(with7Chars) >> ["Demeter","Supernova"]
+//retornou apenas elementos com mais de 7 letras
+
+
+============== FIND =============
+RETORNA O PRIMEIRO ELEMENTO QUE SATISFAZER A CONDIÇÃO
+let hitchedSpaceships = ["Demeter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+let with7Chars = hitchedSpaceships.find(element => {return element.length >= 7})
+
+console.log(with7Chars) >> "Demeter"
