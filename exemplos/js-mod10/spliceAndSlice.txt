@@ -1,0 +1,52 @@
+===============SPLICE===============
+SIGNIFICA EMENDAR OU COSTURAR
+    SUBSTITUI O ARRAY ORIGINAL
+
+array.splice(<indice>>, <quantos elementos devem ser removidos>, <elementos que vão ser colocados no lugar>)
+
+SÓ O PRIMEIRO PARAMETRO É OBRIGATORIO
+
+ex: 
+let spaceshipName = ["Elemental", "Darwin", "Artemis", "supernova"]
+
+let removedSpaceships = spaceshipName.splice(1, 2, "Deméter",  "Puller", "Golias")
+//O SPLICE VAI NA POSIÇÃO 1 (DARWIN) E VAI REMOVER 2 ELEMENTOS A PARTIR DE LÁ (DARWIN E ARTEMIS), NO LUGAR DOS 2 VAI ADICIONAR OS 3 NOVOS ELEMENTOS
+
+console.log(spaceshipName) >> ["Elemental","Deméter","Puller","Golias","supernova"]
+console.log(removedSpaceships) >> ["Darwin","Artemis"]
+
+
+
+
+É POSSIVEL SÓ REMOVER OS ELEMENTOS TAMBÉM 
+
+let spaceshipName = ["Elemental", "Darwin", "Artemis", "supernova"]
+
+let removedSpaceships = spaceshipName.splice(1, 2)
+//vai na posição 1 e remove 2 elementos a partir dela (Darwin e Artemis)
+console.log(spaceshipName)
+
+
+
+
+
+
+
+
+
+
+
+===============SLICE===============
+SIGNIFICA FATIAR OU DIVIDIR
+    EXTRAI UMA PARTE DO ARRAY SEM ALTERAR O ARRAY ORIGINAL 
+    arr.slice([<indice inicial>, <indice final>])
+
+
+ex:
+let spaceshipName = ["Elemental", "Darwin", "Artemis", "supernova"]
+let extractedName = spaceshipNames.slice(1, 3)
+//O ULTIMO ELEMENTO NÃO É EXTRAÍDO (1 ATÉ X), O X FICA DE FORA
+
+console.log(spaceshipName) >> ["Elemental","Darwin","Artemis","supernova"]
+console.log(extractedName) >> ["Darwin","Artemis"]
+
