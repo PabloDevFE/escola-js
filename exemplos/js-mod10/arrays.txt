@@ -1,0 +1,25 @@
+ARRAY É UMA ESTRUTURA DE DADOS > É CAPAZ DE ARMAZENAR E ORGANIZAR OUTROS DADOS
+OS DADOSSÃO ORGANIZADOS EM FORMAS DE LISTAS
+
+ex:
+
+let hitchedSpaceships = ["Supernova", "Elemental", "Helmet"]
+console.log(hitchedSpaceships[0]) >> "Supernova"
+console.log(hitchedSpaceships) >> ["Supernova", "Elemental", "Helmet"]
+
+
+let spaceshipInfo = ["Colossus", 7, true]
+console.log(spaceshipInfo[1]) >> 7
+console.log(spaceshipInfo[3]) >> Undefined
+
+
+let hitchedSpaceships = new Array ("Supernova", "Elemental", "Helmet")
+console.log(hitchedSpaceships) >> ["Supernova","Elemental","Helmet"]
+
+
+let getNumber = new Array (5)
+console.log(getNumber) >> [undefined, undefined, undefined, undefined, undefined]
+
+O NEW ARRAY COM APENAS UM NÚMERO VAI CRIAR UM ARRAY COM ESSA QUANTIDADE DE ESPAÇOS, PORÉM TODOS INDEFINIDOS
+ARRAY PREENCHIDO SEMPRE USAR COLCHETES >> []
+ARRAY VAZIO >> new Array ()

@@ -7,7 +7,7 @@ function slowDown(velocity, printer) {
     alert("Nave parada. As comportas podem ser abertas.")
 }
 
-let spaceshipVelocity = 5500000
+let spaceshipVelocity = 200
 slowDown(spaceshipVelocity, function(velocity){
     console.log("Velocidade atua: " + velocity)
 })
