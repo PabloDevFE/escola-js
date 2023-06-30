@@ -1,0 +1,44 @@
+=============PUSH=============
+ADICIONA UM NOVO ELEMENTO NO FINAL DO ARRAY
+let hitchedSpaceships = ["Colossus", "Elemental", "Helmet"]
+hitchedSpaceships.push("Supernova")
+console.log(hitchedSpaceships) >> ["Colossus","Elemental","Helmet","Supernova"]
+
+
+=============UNSHIFT==============
+FAZ A MESMA COISA QUE O PUSH
+PORÉM ADICIONA UM ELEMENTO NO INICIO DO ARRAY 
+
+
+=============POP==============
+REMOVE O ULTIMO ELEMENTO DO ARRAY 
+let hitchedSpaceships = ["Colossus", "Elemental", "Helmet"]
+hitchedSpaceships.pop()
+console.log(hitchedSpaceships) >> ["Colossus", "Elemental"]
+
+O POP TAMBÉM RETORNA O ELEMENTO REMOVIDO 
+let hitchedSpaceships = ["Colossus", "Elemental", "Helmet"]
+let removed = hitchedSpaceships.pop()
+console.log(removed) >> "Helmet"
+
+
+=============SHIFT==============
+FAZ A MESMA COISA QUE A POP, PORÉM REMOVE O PRIMEIRO ELEMENTO
+TAMBÉM RETORNA SEU VALOR EM UMA VARIAVEL
+
+
+=============LENGTH==============
+EXIBI A QUANTIDADE DE ELEMENTOS EM UM ARRAY
+let hitchedSpaceships = ["Colossus", "Elemental", "Helmet"]
+console.log(hitchedSpaceships.length) >> 3
+
+
+=============INDEXOF==============
+RETORNA A POSIÇÃO DE UM DETERMINADO ELEMENTO
+let hitchedSpaceships = ["Colossus", "Elemental", "Helmet"]
+let elementalPos = hitchedSpaceships.indexOf("Elemental")
+console.log(elementalPos) >> 1
+
+O INDEXOF RETORNA -1 CASO O ELEMENTO NÃO SEJA ENCONTRADO
+let elementalPos = hitchedSpaceships.indexOf("Golias")
+console.log(elementalPos) >> -1
