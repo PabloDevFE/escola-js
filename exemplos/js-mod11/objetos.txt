@@ -1,0 +1,32 @@
+ASSIM COMO ARRAYS SÃO ESTRUTURAS DE DADOS, OS DADOS SÃO ORGANIZADOS ATRAVÉS DE PROPRIEDADES
+PODEM ARMAZENAR QUALQUER OUTRO TIPO, INCLUSIVE ARRAYS E OUTROS OBJETOS
+let spaceship = {
+  name: "Fenix",
+  crewQuantity: 7,
+  type: "Batalha"
+}
+
+console.log(spaceship["name"])
+console.log(spaceship.name)
+
+
+
+MANEIRAS DE ADICIONAR PROPRIEDADES
+
+let spaceship = {
+  name: "Fenix",
+  crewQuantity: 7,
+  type: "Batalha"
+}
+
+OU
+
+spaceship.isHitched = false
+spaceship["shieldLevel"] = 100
+
+console.log(spaceship["isHitched"])
+console.log(spaceship.shieldLevel)
+
+
+
+============UM OBJETO PODE SER CRIADO VAZIA==========

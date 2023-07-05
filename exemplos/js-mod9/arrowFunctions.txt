@@ -8,12 +8,12 @@ TAMBÉM É UMAFUNÇÃO ANONIMA
 
 
 se tiver só uma linha:
-const doubleVelocity = (velocity) => return velocity * 2
+const doubleVelocity = (velocity) => {return velocity * 2}
 console.log(doubleVelocity(60)) >> 120
 
 
 DA PRA SIMPLIFICAR MAIS 
-const doubleVelocity = velocity => return velocity * 2
+const doubleVelocity = velocity => {return velocity * 2}
 console.log(doubleVelocity(60)) >> 120
 
 
