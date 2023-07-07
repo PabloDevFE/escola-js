@@ -1,0 +1,40 @@
+ANINHANDO OBJETOS E ARRAYS
+
+
+
+ARRAYS EM OBJETOS
+let spaceship = {
+    name: "Supernova",
+    type: "Batalha",
+    crew: ["Cap Silva", "Ana Júlia", "Thiago"]
+}
+
+console.log(spaceship.cre) >> ["Cap Silva", "Ana Júlia", "Thiago"]
+
+
+
+
+OBJETO EM ARRAYS
+let spaceships = [
+    { name: "Elemental", crewQuantity: 10 }
+    { name: "Golias", crewQuantity: 8 }
+    { name: "Helmet", crewQuantity: 15 }
+]
+
+console.log(spaceships[0].name) >> "Elemental"
+console.log(spaceships[1].crewQuantity) >> 8
+
+
+
+
+OBJETOS EM OBJETOS
+let spaceship = {
+    name: "Golias",
+    maxCrew: 20,
+    captain: {
+        name: "Hugo Trent",
+        age: 37
+    }
+}
+
+console.log(spaceship.captain.name) >> "Hugo Trent"
