@@ -1,0 +1,24 @@
+TODO OBJETO É CRIADO A PARTIR DE UMA CLASSE
+A CLASSE É UM MOLDE QUE É UTILIZADO PARA CRIAR UM OBJETO
+
+class Spaceship {
+  
+}
+
+COM AS CLASSES CONSEGUIMOS CRIAR NOSSOS PROPRIOS TIPOS DERIVADOS
+
+
+
+
+
+CONSTRUTORES E INSTÂNCIAS
+INSTÂNCIA É O QUE DA ORIGEM AO OBJETO (criar o objeto a partir daquela classe)
+class SpacialStation {
+  constructor (name, platformsQuantity) {
+    this.name = name
+    this.platformsQuantity = platformsQuantity
+  }
+}
+
+let observatory = new SpacialStation("Observatório", 40)
+console.log(observatory)
