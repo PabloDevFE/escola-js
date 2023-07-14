@@ -1,0 +1,9 @@
+permite que classes herdem caracteristicas de outras classes
+
+class Exemple {
+  
+}
+
+class Herdeira extends Exemple {
+  
+}
