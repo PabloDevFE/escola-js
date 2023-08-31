@@ -1,53 +1,39 @@
 let spaceship = {
+  name: prompt("Name of the spaceship:"),
+  type: prompt("Type of the spaceship:"),
+  maxVelocity: prompt("Max velocity this spaceship: \n(in Km/s)"),
   velocity: 0,
-  speedUp: function (acceleration) {
-    this.velocity += acceleration;
-  },
+  accelerate: function () {
+    let acceleration = prompt("How much do you want to accelerate?");
+    this.velocity += Number(acceleration);
+    if (this.velocity > this.maxVelocity) {
+      alert(`ERROR! MAX VELOCITY EXCEEDED
+    \nName of the spaceship: ${spaceship.name}
+    \nType of the spaceship: ${spaceship.type}
+    \nMax Velocity of the spaceship: ${spaceship.maxVelocity}km/s
+    \nVecolity: ${spaceship.velocity}km/s`);
+    }
+  }
 };
 
-function registerSpaceship() {
-  spaceship.name = prompt("Qual vai ser o nome da nave?");
-  spaceship.type = prompt("Qual vai ser o tipo da nave?");
-  spaceship.maxVelocity = Number(prompt("Qual vai ser sua velocidade máxima?"));
+let escolha = prompt(
+  "Stopt the spaceshp or accelerate? \n1- Acellerate \n2- Stop"
+);
+
+  while (escolha == 1) {
+  spaceship.accelerate();
+  escolha = prompt(
+    "Stopt the spaceshp or accelerate? \n1- Acellerate \n2- Stop"
+  );
 }
 
-function accelerate() {
-  let acceleration = Number(prompt("Quanto você quer acelerar? (km/s)"));
-  spaceship.speedUp(acceleration);
-  if (spaceship.velocity > spaceship.maxVelocity) {
-    alert(
-      `VELOCIDADE MAXIMA ULTRAPASSADA, NAVE EM CHAMAS \nVELOCIDADE DA NAVE: ${spaceship.velocity}km/s \nVELOCIDADE MÁXIMA: ${spaceship.maxVelocity}km/s`
-    );
-  }
+if (escolha == 2) {
+  alert(`Name of the spaceship: ${spaceship.name}
+\nType of the spaceship: ${spaceship.type}
+\nMax Velocity of the spaceship: ${spaceship.maxVelocity}km/s
+\nVecolity: ${spaceship.velocity}km/s`);
+} else {
+  alert("Insira um valor válido");
 }
 
-function stop() {
-  alert(`NOME: ${spaceship.name}
-    \nTIPO: ${spaceship.type}
-    \nVELOCIDADE DA NAVE: ${spaceship.velocity}
-    \nVELOCIDADE MÁXIMA: ${spaceship.maxVelocity}
-    `);
 
-  spaceship.velocity = 0;
-}
-
-function showMenu() {
-  let chosenOption;
-  do {
-    chosenOption = prompt("Você deseja acelerar (1) ou parar (2)?");
-    switch (chosenOption) {
-      case "1":
-        accelerate();
-        break;
-      case "2":
-        stop();
-        break;
-      default:
-        alert("Escolha umaopção válida");
-    }
-  } while (chosenOption != "2");
-}
-
-registerSpaceship();
-showMenu();
-console.log(spaceship);
