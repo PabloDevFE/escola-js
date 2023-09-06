@@ -1,55 +1,57 @@
+//uma estação espacial que tem uma lista de naves engatada
+//cada nave possui nome, quantidade de tripulantes, se está ou não engatada, se a porta de entrada está aberta ou não 
+
+//um menu deve ser exibido com as opções: 
+//1 - realizar engate = deve ser possivel cadastrar uma nave com nome e número de tripulantes. Após o cadastro a nave pode ser engatada. quando for engatada, suas portas também são abertas
+//2 - imprimir naves = a lista de naves deve ser impressa
+//3 - sair do programa
+
+let spacialStation = [];
+let menuChoosen;
+let newSpaceship;
+
 class Spaceship {
-    constructor (name, crewQuantity) {
+    constructor(name, crewQuantity, isEngaged) {
         this.name = name
         this.crewQuantity = crewQuantity
-        this.isHitched = false
-        this.entraceDoorsOpen = false
-    }
-
-    hitch() {
-        this.isHitched = true
-        this.entraceDoorsOpen = true
+        this.isEngaged = isEngaged
+        this.isOpen = isEngaged
     }
 }
 
-function showMenu() {
-    let chosenOption
-    while (chosenOption != "1" && chosenOption != "2" && chosenOption != "3" ) {
-        chosenOption = prompt(`o que deseja fazer? 
-        \n1 - engatar nave 
-        \n2 - Imprimir naves 
-        \n3 - Sair do programa`)
+let showPrompt = function() {
+    menuChoosen = prompt("Selecione uma opção: \n1 - Realizer engate \n2 - Imprimir naves \n3 - Sair do programa")
+    return menuChoosen
+}
+
+function menuExibition() {
+    showPrompt()
+
+    while(menuChoosen == 1) {
+        getInformations()
+        showPrompt()
     }
-    return chosenOption
-}
 
-function CreateSpaceship() {
-    let spaceshipName = prompt("Informe o nome da nave")
-    let crewQuantity =  prompt("Informe a quantidade de tripulantes")
-    let spaceship = new Spaceship(spaceshipName, crewQuantity)
-    return spaceship
-}
+    if(menuChoosen == 2) {
+        let spaceshipList = [];
+        for(z = 0; z < spacialStation.length; z++) {
+            spaceshipList.push(spacialStation[z])
+            alert(`Nome da nave: ${spaceshipList[z].name}\nTripulação máxima: ${spaceshipList[z].crewQuantity}\nEstá engatada: ${spaceshipList[z].isEngaged}`)
+        }
+    }
 
-function printSpaceshipList(spaceships) {
-    let spaceshipList = ""
-    spaceships.forEach((spaceship, index) => {
-        spaceshipList += (index + 1) + "- " + spaceship.name + " (" + spaceship.crewQuantity + " tripulantes) \n"
-    })
-    alert(spaceshipList)
-}
-
-let hitchedSpaceships = []
-let chosenOption
-
-while(chosenOption != "3") {
-    chosenOption = showMenu()
-    switch(chosenOption) {
-        case "1":
-            let spaceshipToAdd = CreateSpaceship()
-            spaceshipToAdd.hitch()
-            hitchedSpaceships.push(spaceshipToAdd)
-            break
-        case "2":
-            printSpaceshipList(hitchedSpaceships)
+    while(menuChoosen > 3 || menuChoosen < 1) {
+        alert("Digite um valor válido!")
+        showPrompt()
     }
 }
+
+function getInformations(){
+    let name = prompt("Qual o nome da nave?")
+    let crewQuantity = prompt("Qual a capacidade máxima da tripulação?")
+    let isEngaged = confirm("Está engatada? \nOk = Engatada \nCancelar = Não Engatada")
+    newSpaceship = new Spaceship(name, crewQuantity, isEngaged)
+    spacialStation.push(newSpaceship)
+}
+
+menuExibition()

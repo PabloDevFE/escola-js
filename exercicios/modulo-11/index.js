@@ -13,14 +13,14 @@ let spaceship = {
     \nMax Velocity of the spaceship: ${spaceship.maxVelocity}km/s
     \nVecolity: ${spaceship.velocity}km/s`);
     }
-  }
+  },
 };
 
 let escolha = prompt(
   "Stopt the spaceshp or accelerate? \n1- Acellerate \n2- Stop"
 );
 
-  while (escolha == 1) {
+while (escolha == 1) {
   spaceship.accelerate();
   escolha = prompt(
     "Stopt the spaceshp or accelerate? \n1- Acellerate \n2- Stop"
@@ -35,5 +35,3 @@ if (escolha == 2) {
 } else {
   alert("Insira um valor válido");
 }
-
-
