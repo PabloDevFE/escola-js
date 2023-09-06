@@ -18,7 +18,7 @@ class Spaceship {
     this.isOpen = isEngaged;
   }
 }
-
+ 
 let showPrompt = function () {
   menuChoosen = prompt(
     "Selecione uma opção: \n1 - Realizer engate \n2 - Imprimir naves \n3 - Sair do programa"
